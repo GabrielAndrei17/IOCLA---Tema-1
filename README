@@ -1,0 +1,30 @@
+///Tema 1 - Sistemul lui Biju
+// Andrei Gabriel 323CB
+
+La inceput am definit functia MakeHome care imi va crea directorul home, functiile de dezalocare recursiva
+DezalocRecDir si DezalocRecFile si functiile WordExistInFile si WordExistInDir care vor cauta intr-o lista
+elementul cu numele dat si il va returna(fiind folositoare in cerintele in care trebuie sa verific daca 
+exista un element in lista cu numele dat, dar si pentru stergerea si modificarea elementului).
+
+touch: Dupa ce am verificat daca numele nu a fost folosit deje, am construit structura de tip file si am legat-o
+de parintele ei.
+
+mkdir: Foarte asemanator cu functia touch.
+
+ls: Se parcurge mai intai lista de elemente de tip Dir si se afisaza numele, apoi pe cea de elemente File.
+
+rm: Dupa ce am verificat daca numele exista in lista, am actualizat legaturile listei, si am sters elementul.
+
+rmdir: Foarte asemanator cu functia rm.
+
+cd: In cazul "..", se modifica directorul curent in parintele acestuia, altfel se cauta numele respectiv si se 
+modifica directorul curent
+
+pwd: Se pleaca de la directorul curent si se merge pana la home, inserand in stringul rezultat numele directoarelor.
+
+tree: Functie recursiva, pentru fiecare element din liste se va afisa numele.
+
+stop: In main se vor citi linii cu comenzi pana la intalnirea stringului "stop". La final se va dezaloca memoria folosita.
+
+mv: Daca se va gasi o structura cu numele dat(oldname), i se va modifica numele, se vor actualiza legaturile listei
+si se va adauga structura la finalul listei.

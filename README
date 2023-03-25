@@ -1,4 +1,4 @@
-///Tema 1 - Sistemul lui Biju
+///Tema 1 - Linux File System
 // Andrei Gabriel 323CB
 
 La inceput am definit functia MakeHome care imi va crea directorul home, functiile de dezalocare recursiva
